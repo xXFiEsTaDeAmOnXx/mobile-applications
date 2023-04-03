@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LKW</string>
+    <string name="spinnerLkwType">LKW</string>
+    <string name="radioBtnErde">Erde</string>
+    <string name="radioBtnKies">Kies</string>
+    <string name="btnDate">Datum wählen</string>
+    <string name="menu_item_eingabe_loeschen">Eingabe Löschen</string>
+    <string name="input_gewicht_in_tonne">Gewicht in Tonne</string>
+    <string name="image_description_feedback_image">Feedback Image</string>
+    <string name="error_msg_date">Samstag und Sonntag darf nicht ausgewählt werden</string>
+    <string name="menu_item_settings">Settings</string>
+    <string-array name="array_lkw_types">
+        <item>MAN TGA Kipplaster</item>
+        <item>MAN TGA Kipper</item>
+        <item>Mercedes Actros Kipper</item>
+    </string-array>
+
+</resources>

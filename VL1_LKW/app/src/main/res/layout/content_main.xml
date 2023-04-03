@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Spinner
+        android:id="@+id/spinnerLkwType"
+        android:layout_width="348dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="130dp"
+        android:contentDescription="@string/spinnerLkwType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupLadung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:checkedButton="@id/radioButtonKies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal">
+
+        <RadioButton
+            android:id="@+id/radioButtonErde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonSelection"
+            android:text="@string/radioBtnErde" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonSelection"
+            android:text="@string/radioBtnKies" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="buttonClicked"
+        android:text="@string/btnDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupLadung"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="172dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/image_description_feedback_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDate"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/notok" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="130dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/input_gewicht_in_tonne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerLkwType"
+        android:autofillHints="" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
